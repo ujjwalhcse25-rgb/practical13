@@ -41,6 +41,20 @@
             color: white;
             padding-left: 20px;
           }
+          form{
+            display: inline-block;
+            text-align: left;
+          }
+          fieldset{
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+          }
+          legend{
+            font-weight: bold;
+            padding: 0 10px;
+          }
         </style>
     </head>
     <body>
@@ -217,38 +231,48 @@
 <div style="text-align: center;">
 <form>
 <fieldset>
-    
+  <legend>Table Reservation</legend>
 <table cellpadding="8">
 
 <tr>
     <td>Name:</td>
-    <td><input type="text" placeholder="Enter Name"></td>
+    <td><input type="text" name="name" placeholder="Enter Name"></td>
 </tr>
 
 <tr>
     <td>Email:</td>
-    <td><input type="email"></td>
+    <td><input type="email" name="email"></td>
 </tr>
 
 <tr>
     <td>Phone:</td>
-    <td><input type="number"></td>
+    <td><input type="number" name="phone"></td>
 </tr>
-
+<tr>
+  <td>Select Hotel: </td>
+  <td>
+    <select name="hotel">
+      <option value="">Select</option>
+      <option value="hotel1">Hotel Laziz</option>
+      <option value="hotel2">Vishnuji ki Rasoi</option>
+      <option value="hotel3">Hotel Al-Zam-Zam</option>
+    </select>
+  </td>
+</tr>
 <tr>
     <td>Date:</td>
-    <td><input type="date"></td>
+    <td><input type="date" name="date"></td>
 </tr>
 
 <tr>
     <td>Time:</td>
-    <td><input type="time"></td>
+    <td><input type="time" name="time"></td>
 </tr>
 
 <tr>
     <td>Guests:</td>
     <td>
-        <select>
+        <select name="guests">
             <option>1</option>
             <option>2</option>
             <option>3</option>
