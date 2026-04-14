@@ -4,9 +4,18 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
-        <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-    Select Menu
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: orange;">
+  <div class="container-fluid">
+    <div class="nav-link" style="color: white; font-weight: bold;">Swigato</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+         <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" href="#menu" style="background-color: orange; color: white;  border: none " >
+     Menu
   </button>
   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
     <li><a class="dropdown-item active" href="#veg">Veg</a></li>
@@ -16,6 +25,47 @@
     <li><hr class="dropdown-divider"></li>
   </ul>
 </div>
+
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contacts">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#home">Home</a></li>
+  </ol>
+</nav>   
+<section id="home">
+       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="WhatsApp Image 2026-04-14 at 11.51.08.jpeg" class="d-block w-100" >
+    </div>
+    <div class="carousel-item">
+      <img src="WhatsApp Image 2026-04-14 at 11.54.12.jpeg" class="d-block w-100" >
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+<section id="menu"></section>
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#home">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page" href="#menu">Menu</li>
+    <li class="breadcrumb-item active" aria-current="page" href="#veg">Veg</li>
+  </ol>
+</nav>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
